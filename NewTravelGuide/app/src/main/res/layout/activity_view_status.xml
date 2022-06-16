@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                style="@style/viewParent.headerText.NoMode"
+                android:textSize="25dp"
+                android:text="Control device" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/company"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Company name"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/companyname"
+                    tools:ignore="UnknownId" />
+                <TextView
+                    android:id="@id/companyname"
+                    android:layout_width="150dp"
+                    android:text="Company"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/ipadd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="IP address"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/ipaddname"
+                    tools:ignore="UnknownId" />
+                <TextView
+                    android:id="@id/ipaddname"
+                    android:layout_width="150dp"
+                    android:text="ip"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/method"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Method name"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/methodname"
+                    tools:ignore="UnknownId" />
+                <TextView
+                    android:id="@id/methodname"
+                    android:layout_width="150dp"
+                    android:text="method"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/format"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Format"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/formatname"
+                    tools:ignore="UnknownId" />
+                <TextView
+                    android:id="@id/formatname"
+                    android:layout_width="150dp"
+                    android:text="format"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/fan"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:switchMinWidth="60dp"
+                    android:text="Fan"
+                    android:textSize="20dp"
+                    tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"/>
+
+                <Switch
+                    android:id="@+id/Ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Ac"
+                    android:switchMinWidth="60dp"
+                    android:textSize="20dp"
+                    tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"/>
+
+                <Switch
+                    android:id="@+id/Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Light"
+                    android:switchMinWidth="60dp"
+                    android:textSize="20dp"
+                    tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"/>
+
+                <Switch
+                    android:id="@+id/Freeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Freeze"
+                    android:switchMinWidth="60dp"
+                    android:textSize="20dp"
+                    tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_add_img" />
+
+</RelativeLayout>
+

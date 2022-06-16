@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.0dip"
+        android:background="@drawable/cardshape"
+        android:layout_margin="9dp"
+        android:orientation="vertical"
+        android:padding="3.0dip"
+        android:weightSum="1.0"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8.0dip"
+            android:background="@drawable/searchshape"
+            android:layout_margin="3dp"
+            android:weightSum="1.0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:padding="2.0dip">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/search_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:clipToPadding="false"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="3.0dip"
+                    app:cardElevation="1.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingClass">
+
+                        <View
+                            android:layout_width="15.0dip"
+                            android:layout_height="0.0dip" />
+
+                        <EditText
+                            android:id="@+id/search_input"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:background="@android:color/transparent"
+                            android:hint="Search rating"
+                            android:textColorHint="#1566e0"
+                            android:imeOptions="actionSearch"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                        <ImageButton
+                            android:id="@+id/bt_mic"
+                            android:layout_width="?actionBarSize"
+                            android:layout_height="?actionBarSize"
+                            android:background="#ffffffff"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/search"
+                            tools:ignore="VectorDrawableCompat"
+                            app:tint="#ff817f7f" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

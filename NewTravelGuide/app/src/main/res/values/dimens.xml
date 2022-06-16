@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="headerTextSize">25sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="card_recycler_corner_radius">3dp</dimen>
+    <dimen name="card_recycler_elevation">5.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">1.0dip</dimen>
+    <dimen name="cardview_default_elevation">2.0dip</dimen>
+    <dimen name="cardview_default_radius">2.0dip</dimen>
+
+    <dimen name="main_card_margin_vertical">8.0dip</dimen>
+    <dimen name="my_apps_card_margin_horizontal">16.0dip</dimen>
+
+    <dimen name="spacing_large">15.0dip</dimen>
+    <dimen name="spacing_mlarge">20.0dip</dimen>
+    <dimen name="text_margin">16.0dip</dimen>
+    <dimen name="text_margin_very_small">4.0dip</dimen>
+
+
+    <dimen name="tab_height">4dp</dimen>
+    <dimen name="loader_height150dp">150dp</dimen>
+    <dimen name="margin48dp">48dp</dimen>
+    <dimen name="image_height180dp">180dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="padding8dp">8dp</dimen>
+    <dimen name="margin4dp">4dp</dimen>
+    <dimen name="dimen_image200dp">200dp</dimen>
+    <dimen name="padding16dp">16dp</dimen>
+    <dimen name="events_text_width60dp">60dp</dimen>
+    <dimen name="event_text_height0dp">0dp</dimen>
+    <dimen name="events_img_width110dp">110dp</dimen>
+    <dimen name="events_img_height110dp">110dp</dimen>
+    <dimen name="div_height1dp">1dp</dimen>
+    <dimen name="img_width0dp">0dp</dimen>
+    <dimen name="margin7dp">7dp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+</resources>

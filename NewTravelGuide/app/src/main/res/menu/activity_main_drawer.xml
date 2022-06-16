@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Hotels" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/home_icon"
+            android:title="Places" />
+
+        <item
+            android:id="@+id/nav_Recreation"
+            android:icon="@drawable/home_icon"
+            android:title="Recreation" />
+        <item
+            android:id="@+id/nav_Restaurant"
+            android:icon="@drawable/home_icon"
+            android:title="Restaurant" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout" />
+    </group>
+
+</menu>
